@@ -1,0 +1,18 @@
+coder@railway:~/project/28-04-22$ ./sum.bin
+Enter number
+>11111
+SUM = 5
+
+coder@railway:~/project/28-04-22$ ./swap.bin
+Enter two numbers (A,B)
+>5,6
+[Before Swap] C=5, D=6
+[After Swap ] C=6, D=5
+
+coder@railway:~/project/28-04-22$ ./area.bin
+Enter Length, Breadth
+>4,6
+Enter Radius
+>5
+[Rectangle] Area = 24.000000 ; Perimeter = 20.000000
+[Circle] Area = 78.539750 ; Perimeter = 31.415900
