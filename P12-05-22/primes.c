@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int is_prime(int a) {
-  int half_a = (a / 2) + 1;
+  int half_a = (a + 1);
   for (int j = 2; j < half_a; j++) {
     if (a % j == 0) {
       return 0;
