@@ -15,11 +15,7 @@ int main(int argc, char *argv[])
             printf("You Lose!\n");
             break;
         }
-        computer_pick = 4;
-        if (matches == 4) computer_pick = 3;
-        else if (matches == 3) computer_pick = 2;
-        else if (matches == 2) computer_pick = 1;
-        else if (matches % 2 == 0) computer_pick = 3;
+        computer_pick = 5-user_pick;
         
         printf("[Computer's Turn] Computer Picked %d", computer_pick);
         matches -= computer_pick;
