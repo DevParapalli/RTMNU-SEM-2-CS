@@ -90,7 +90,7 @@ void print_array(int arr[], int len_arr) {
 
 /*
 Array of length 20 initialized with random numbers.
-Enter Search :27
-Element found at index 6
+Enter Search :28
+Element found at index 7
 13-16-19-19-23-25-27-28-29-36-38-38-41-44-45-45-45-47-48-56
 */
