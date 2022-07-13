@@ -2,9 +2,11 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define MAX_LENGTH 60
+
 typedef struct Part {
     char serial[4];
-    char material[50];
+    char material[64];
     int quantity;
     int year;
     } part;
@@ -26,9 +28,9 @@ void index_to_serial(int index, char* serial) {
 
 
 int main() {
-    part parts[61];
+    part parts[MAX_LENGTH];
     char serial[4]; // Used to keep track of current index
-    for (int i = 0; i < 61; i++) {
+    for (int i = 0; i < MAX_LENGTH; i++) {
         index_to_serial(i, serial);
         printf("Enter material, quantity, and year of part %s:", serial);
         scanf("%s %d %d", parts[i].material, &parts[i].quantity, &parts[i].year);

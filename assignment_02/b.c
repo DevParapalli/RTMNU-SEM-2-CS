@@ -2,13 +2,15 @@
 #include <string.h>
 #include <stdlib.h>
 
+#define MAX_LENGTH 50
+
 typedef struct Account {
     int account_number;
-    char name[50];
+    char name[64];
     float balance;
     } account;
 
-void print_account_on_less_than_100_bal(account a[51], int num_accounts) {
+void print_account_on_less_than_100_bal(account a[MAX_LENGTH], int num_accounts) {
     int i;
     for (i = 0; i < num_accounts; i++) {
         if (a[i].balance < 100) {
@@ -20,7 +22,7 @@ void print_account_on_less_than_100_bal(account a[51], int num_accounts) {
         }
     }
 
-void do_transaction(account a[51], int num_acc, int acc_num, int amount, int code) {
+void do_transaction(account a[MAX_LENGTH], int num_acc, int acc_num, int amount, int code) {
     for (int i = 0; i < num_acc; i++) {
         if (a[i].account_number == acc_num) {
             switch (code) {
@@ -44,7 +46,7 @@ void do_transaction(account a[51], int num_acc, int acc_num, int amount, int cod
 
 
 int main() {
-    account accounts[51];
+    account accounts[MAX_LENGTH];
     int number_of_accounts = 0;
     printf("Enter the number of accounts: ");
     scanf("%d", &number_of_accounts);

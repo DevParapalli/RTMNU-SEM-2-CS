@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-#define MAX_BOOKS 20
+#define MAX_LENGTH 20
 
 typedef struct Book {
     char title[64];
@@ -18,20 +18,20 @@ void print_menu() {
     printf("Enter Choice:");
     }
 
-void add_book(book books[MAX_BOOKS], int* num_books) {
+void add_book(book books[MAX_LENGTH], int* num_books) {
     printf("Enter the title, author, and year of the book: ");
     scanf("%s %s %d", books[*num_books].title, books[*num_books].author, &books[*num_books].year);
     (*num_books)++;
     }
 
-void print_books(book books[MAX_BOOKS], int num_books) {
+void print_books(book books[MAX_LENGTH], int num_books) {
     for (int i = 0; i < num_books; i++) {
         printf("%d-%s\n", i, books[i].title);
         }
     }
 
 int main() {
-    book books[MAX_BOOKS];
+    book books[MAX_LENGTH];
     int num_books = 0;
     char choice = '\0';
     while (choice != 'Q' && choice != 'q') {
