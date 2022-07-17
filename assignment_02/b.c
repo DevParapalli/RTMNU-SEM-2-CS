@@ -38,9 +38,6 @@ void do_transaction(account a[MAX_LENGTH], int num_acc, int acc_num, int amount,
                 }
             }
         }
-
-
-
     }
 
 

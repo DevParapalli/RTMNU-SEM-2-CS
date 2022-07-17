@@ -1,0 +1,6 @@
+selenium
+typer
+pillow
+rich
+requests
+beautifulsoup4
